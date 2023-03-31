@@ -1,0 +1,35 @@
+@import '@/styles/variables.sass'
+
+.content
+  padding-top: 120px
+  padding-bottom: 95px
+  min-height: 100vh
+  background-color: $bg404
+
+.container
+  max-width: 1284px
+  margin: 0 auto
+
+.container
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.text
+  position: relative
+  font-weight: 700
+  font-size: calc( 200px + 500  * (100vw - 320px) / 1810)
+  line-height: 116%
+  color: rgba(255, 255, 255, 0.5)
+  text-align: center
+  &::after
+    content: ''
+    position: absolute
+    left: 12%
+    right: 12%
+    top: 12%
+    bottom: 12%
+    background-image: url('/404.png')
+    background-repeat: no-repeat
+    background-position: center
+    background-size: contain

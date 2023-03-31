@@ -1,0 +1,39 @@
+@import '@/styles/variables.sass'
+
+.listItem
+  padding: 15px 0
+
+.listItem:not(:last-child)
+  margin-right: 40px
+
+.link
+  position: relative
+  color: $colorMain
+  &::after
+    content: ''
+    display: block
+    position: absolute
+    left: 50%
+    bottom: -10px
+    transform: translateX(-50%)
+    width: 90%
+    height: 2px
+    background-color: $colorMainActive
+    opacity: 0
+    visibility: hidden
+
+.linkActive
+  position: relative
+  color: $colorMainActive
+  &::after
+    content: ''
+    display: block
+    position: absolute
+    left: 50%
+    bottom: -10px
+    transform: translateX(-50%)
+    width: 90%
+    height: 2px
+    background-color: $colorMainActive
+    opacity: 1
+    visibility: visible

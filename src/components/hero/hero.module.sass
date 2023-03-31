@@ -1,0 +1,42 @@
+@import '@/styles/variables.sass'
+
+.main
+  flex-grow: 1
+  background: $bgHome
+
+.content
+  display: flex
+  justify-content: center
+  flex-wrap: wrap-reverse
+  min-height: 500px
+  padding: 11% 0
+  margin-right: -12%
+
+.descr
+  flex: 1 1 496px
+  margin-right: 10px
+  max-width: 900px
+
+.title
+
+  margin-bottom: 64px
+  font-weight: 700
+  font-size: 72px
+  line-height: 84px
+  letter-spacing: 4px
+
+.text
+  margin-bottom: 64px
+  font-weight: 400
+  font-size: 32px
+  line-height: 37px
+
+.img
+  flex: 0 1 50%
+  max-width: 100%
+  max-height: 10%
+  object-fit: contain
+
+@media( max-width: 1024px )
+  .content
+    margin-right: 0
